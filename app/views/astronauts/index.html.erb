@@ -1,0 +1,9 @@
+<h1>Astronauts</h1>
+<h3>Average Age: <%= @average_age %></h3>
+<% @astronauts.each do |astronaut| %>
+  <ul id="<%= astronaut.id %>">
+    <li>Name: <%= astronaut.name %></li>
+    <li>Age: <%= astronaut.age %></li>
+    <li>Job: <%= astronaut.job %></li>
+  </ul>
+<% end %>
